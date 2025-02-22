@@ -1,13 +1,15 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
+import { ReactFlowProvider } from "@xyflow/react";
+import FlowGraph from "./components/FlowGraph";
+import Sidebar from "./components/Sidebar";
 
 const App = () => {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-      </Routes>
-    </Router>
+    <ReactFlowProvider>
+      <div className="flex">
+        <FlowGraph />
+        <Sidebar />
+      </div>
+    </ReactFlowProvider>
   );
 };
 
