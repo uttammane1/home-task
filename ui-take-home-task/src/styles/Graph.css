@@ -1,0 +1,43 @@
+.graph-container {
+    border: 1px solid #ddd;
+    background: linear-gradient(to bottom, #eef2ff, #e0e7ff);
+    border-radius: 12px;
+  }
+  
+  .graph-link {
+    stroke: #6366f1;
+    stroke-width: 2px;
+    opacity: 0.7;
+  }
+  
+  .graph-node {
+    fill: #4f46e5;
+    stroke: #1e40af;
+    stroke-width: 2px;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .graph-node:hover {
+    fill: #1e3a8a;
+    cursor: pointer;
+    transform: scale(1.2);
+  }
+  
+  .graph-label {
+    font-size: 12px;
+    fill: #1e40af;
+    font-weight: bold;
+  }
+  
+  .tooltip {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 6px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.2s ease-in-out;
+  }
+  
